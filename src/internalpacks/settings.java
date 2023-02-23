@@ -38,7 +38,7 @@ public class settings extends javax.swing.JInternalFrame {
 
         setPreferredSize(new java.awt.Dimension(730, 380));
 
-        jPanel1.setBackground(new java.awt.Color(255, 102, 102));
+        jPanel1.setBackground(new java.awt.Color(0, 102, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Segoe UI Black", 1, 11)); // NOI18N
