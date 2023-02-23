@@ -29,12 +29,20 @@ public class guidos extends javax.swing.JFrame {
         nav = new javax.swing.JPanel();
         dashboardpanel = new javax.swing.JPanel();
         dash = new javax.swing.JLabel();
-        Settings = new javax.swing.JPanel();
-        sett = new javax.swing.JLabel();
-        Shop = new javax.swing.JPanel();
-        shop = new javax.swing.JLabel();
+        userp = new javax.swing.JPanel();
+        yuser = new javax.swing.JLabel();
+        reprts = new javax.swing.JPanel();
+        rep = new javax.swing.JLabel();
         header = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
         body = new javax.swing.JDesktopPane();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -66,64 +74,72 @@ public class guidos extends javax.swing.JFrame {
 
         nav.add(dashboardpanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 120, 50));
 
-        Settings.setBackground(new java.awt.Color(0, 51, 204));
-        Settings.addMouseListener(new java.awt.event.MouseAdapter() {
+        userp.setBackground(new java.awt.Color(0, 51, 204));
+        userp.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                SettingsMouseClicked(evt);
+                userpMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                SettingsMouseEntered(evt);
+                userpMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                SettingsMouseExited(evt);
+                userpMouseExited(evt);
             }
         });
-        Settings.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        userp.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        sett.setFont(new java.awt.Font("Myanmar Text", 1, 18)); // NOI18N
-        sett.setForeground(new java.awt.Color(240, 240, 240));
-        sett.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        sett.setText("Settings");
-        Settings.add(sett, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 100, 20));
+        yuser.setFont(new java.awt.Font("Myanmar Text", 1, 18)); // NOI18N
+        yuser.setForeground(new java.awt.Color(240, 240, 240));
+        yuser.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        yuser.setText("User Page");
+        userp.add(yuser, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 100, 20));
 
-        nav.add(Settings, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 170, 120, 50));
+        nav.add(userp, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 170, 120, 50));
 
-        Shop.setBackground(new java.awt.Color(0, 51, 204));
-        Shop.addMouseListener(new java.awt.event.MouseAdapter() {
+        reprts.setBackground(new java.awt.Color(0, 51, 204));
+        reprts.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                ShopMouseClicked(evt);
+                reprtsMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                ShopMouseEntered(evt);
+                reprtsMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                ShopMouseExited(evt);
+                reprtsMouseExited(evt);
             }
         });
-        Shop.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        reprts.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        shop.setFont(new java.awt.Font("Myanmar Text", 1, 18)); // NOI18N
-        shop.setForeground(new java.awt.Color(240, 240, 240));
-        shop.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        shop.setText("Shop");
-        Shop.add(shop, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 100, 20));
+        rep.setFont(new java.awt.Font("Myanmar Text", 1, 18)); // NOI18N
+        rep.setForeground(new java.awt.Color(240, 240, 240));
+        rep.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        rep.setText("Reports");
+        reprts.add(rep, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 100, 20));
 
-        nav.add(Shop, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 120, 50));
+        nav.add(reprts, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 120, 50));
 
         jPanel1.add(nav);
         nav.setBounds(0, 0, 120, 450);
 
         header.setBackground(new java.awt.Color(0, 255, 255));
 
+        jLabel2.setFont(new java.awt.Font("Microsoft PhagsPa", 1, 36)); // NOI18N
+        jLabel2.setText("Welcome to the Almighty Crib");
+
         javax.swing.GroupLayout headerLayout = new javax.swing.GroupLayout(header);
         header.setLayout(headerLayout);
         headerLayout.setHorizontalGroup(
             headerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 730, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, headerLayout.createSequentialGroup()
+                .addContainerGap(111, Short.MAX_VALUE)
+                .addComponent(jLabel2)
+                .addGap(109, 109, 109))
         );
         headerLayout.setVerticalGroup(
             headerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 70, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, headerLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         jPanel1.add(header);
@@ -131,15 +147,77 @@ public class guidos extends javax.swing.JFrame {
 
         body.setBackground(new java.awt.Color(0, 102, 255));
 
+        jLabel1.setFont(new java.awt.Font("Microsoft PhagsPa", 1, 36)); // NOI18N
+        jLabel1.setText("also known as \"insert cool name here\"");
+
+        jLabel3.setFont(new java.awt.Font("Microsoft PhagsPa", 1, 36)); // NOI18N
+        jLabel3.setText("sir Cuuks Allote created and started a new ");
+
+        jLabel4.setFont(new java.awt.Font("Microsoft PhagsPa", 1, 36)); // NOI18N
+        jLabel4.setText("a long time ago, there was a shortage");
+
+        jLabel5.setFont(new java.awt.Font("Microsoft PhagsPa", 1, 36)); // NOI18N
+        jLabel5.setText("of quality good food thats why our hero");
+
+        jLabel6.setFont(new java.awt.Font("Microsoft PhagsPa", 1, 36)); // NOI18N
+        jLabel6.setText("twist into attracting customers and it ");
+
+        jLabel7.setFont(new java.awt.Font("Microsoft PhagsPa", 1, 36)); // NOI18N
+        jLabel7.setText("boomed like a nuclear bomb and since ");
+
+        jLabel8.setFont(new java.awt.Font("Microsoft PhagsPa", 1, 36)); // NOI18N
+        jLabel8.setText("then it became a household name. whoosh!");
+
+        body.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        body.setLayer(jLabel3, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        body.setLayer(jLabel4, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        body.setLayer(jLabel5, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        body.setLayer(jLabel6, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        body.setLayer(jLabel7, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        body.setLayer(jLabel8, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
         javax.swing.GroupLayout bodyLayout = new javax.swing.GroupLayout(body);
         body.setLayout(bodyLayout);
         bodyLayout.setHorizontalGroup(
             bodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 730, Short.MAX_VALUE)
+            .addGroup(bodyLayout.createSequentialGroup()
+                .addGroup(bodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(bodyLayout.createSequentialGroup()
+                        .addGap(42, 42, 42)
+                        .addGroup(bodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel1)))
+                    .addGroup(bodyLayout.createSequentialGroup()
+                        .addGap(21, 21, 21)
+                        .addComponent(jLabel5))
+                    .addGroup(bodyLayout.createSequentialGroup()
+                        .addGap(33, 33, 33)
+                        .addGroup(bodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel7)
+                            .addComponent(jLabel6)))
+                    .addGroup(bodyLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel3))
+                    .addComponent(jLabel8))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         bodyLayout.setVerticalGroup(
             bodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 380, Short.MAX_VALUE)
+            .addGroup(bodyLayout.createSequentialGroup()
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel8)
+                .addContainerGap(15, Short.MAX_VALUE))
         );
 
         jPanel1.add(body);
@@ -167,36 +245,36 @@ public class guidos extends javax.swing.JFrame {
         dashboardpanel.setBackground(navc);
     }//GEN-LAST:event_dashboardpanelMouseExited
 
-    private void SettingsMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SettingsMouseEntered
-        Settings.setBackground(bodyc);
-    }//GEN-LAST:event_SettingsMouseEntered
+    private void userpMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_userpMouseEntered
+        userp.setBackground(bodyc);
+    }//GEN-LAST:event_userpMouseEntered
 
-    private void SettingsMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SettingsMouseExited
-        Settings.setBackground(navc);
-    }//GEN-LAST:event_SettingsMouseExited
+    private void userpMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_userpMouseExited
+        userp.setBackground(navc);
+    }//GEN-LAST:event_userpMouseExited
 
-    private void ShopMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ShopMouseEntered
-        Shop.setBackground(bodyc);
-    }//GEN-LAST:event_ShopMouseEntered
+    private void reprtsMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_reprtsMouseEntered
+        reprts.setBackground(bodyc);
+    }//GEN-LAST:event_reprtsMouseEntered
 
-    private void ShopMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ShopMouseExited
-       Shop.setBackground(navc);
-    }//GEN-LAST:event_ShopMouseExited
+    private void reprtsMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_reprtsMouseExited
+       reprts.setBackground(navc);
+    }//GEN-LAST:event_reprtsMouseExited
 
-    private void SettingsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SettingsMouseClicked
+    private void userpMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_userpMouseClicked
         settings shet = new settings();
         body.add(shet).setVisible(true);
-    }//GEN-LAST:event_SettingsMouseClicked
+    }//GEN-LAST:event_userpMouseClicked
 
     private void dashboardpanelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dashboardpanelMouseClicked
         dass des = new dass();
         body.add(des).setVisible(true);
     }//GEN-LAST:event_dashboardpanelMouseClicked
 
-    private void ShopMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ShopMouseClicked
+    private void reprtsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_reprtsMouseClicked
         syap bai = new syap();
         body.add(bai).setVisible(true);
-    }//GEN-LAST:event_ShopMouseClicked
+    }//GEN-LAST:event_reprtsMouseClicked
 
     /**
      * @param args the command line arguments
@@ -234,15 +312,23 @@ public class guidos extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel Settings;
-    private javax.swing.JPanel Shop;
     private javax.swing.JDesktopPane body;
     private javax.swing.JLabel dash;
     private javax.swing.JPanel dashboardpanel;
     private javax.swing.JPanel header;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel nav;
-    private javax.swing.JLabel sett;
-    private javax.swing.JLabel shop;
+    private javax.swing.JLabel rep;
+    private javax.swing.JPanel reprts;
+    private javax.swing.JPanel userp;
+    private javax.swing.JLabel yuser;
     // End of variables declaration//GEN-END:variables
 }

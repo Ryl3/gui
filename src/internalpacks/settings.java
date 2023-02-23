@@ -41,9 +41,9 @@ public class settings extends javax.swing.JInternalFrame {
         jPanel1.setBackground(new java.awt.Color(0, 102, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI Black", 1, 11)); // NOI18N
-        jLabel1.setText("THIS THE SETTINGS 'CAUSE TONIGHTS WILL BE THE NIGHT THAT I WILL FALL FOR YOU''");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 130, -1, 30));
+        jLabel1.setFont(new java.awt.Font("Segoe UI Black", 1, 24)); // NOI18N
+        jLabel1.setText("User Page window");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 110, -1, 80));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

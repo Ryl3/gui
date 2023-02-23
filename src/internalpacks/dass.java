@@ -5,6 +5,7 @@
  */
 package internalpacks;
 
+import java.awt.Color;
 import javax.swing.plaf.basic.BasicInternalFrameUI;
 
 /**
@@ -23,6 +24,10 @@ public class dass extends javax.swing.JInternalFrame {
         BasicInternalFrameUI bi = (BasicInternalFrameUI)this.getUI();
         bi.setNorthPane(null);
     }
+    
+    Color navcd = new Color(204,0,0);
+    Color headercd = new Color(0,255,255);
+    Color bodycd = new Color(255,51,51);
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -33,39 +38,168 @@ public class dass extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
+        bodyblue = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel9 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        bodyred = new javax.swing.JPanel();
+        pickdettaym = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        addresurv = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        picktabset = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
 
-        jPanel1.setBackground(new java.awt.Color(0, 102, 255));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
-        jLabel1.setText("dasshhhhhvord");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 130, -1, -1));
+        bodyblue.setBackground(new java.awt.Color(0, 0, 204));
+        bodyblue.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel2.setText("supp baby hehe");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 200, -1, -1));
+        jPanel3.setBackground(new java.awt.Color(51, 51, 255));
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 714, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 350, Short.MAX_VALUE)
-        );
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/internalpacks/icons8-restaurant-building-100.png"))); // NOI18N
+        jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 100, 100));
+
+        bodyblue.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 30, 140, 130));
+
+        jLabel1.setFont(new java.awt.Font("Gabriola", 1, 48)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(240, 240, 240));
+        jLabel1.setText("Resto Reservation Tracker");
+        bodyblue.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, -1, 50));
+
+        jLabel2.setFont(new java.awt.Font("MS UI Gothic", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(240, 240, 240));
+        jLabel2.setText("\"I love you, you lave me. We love food like you and me\"");
+        bodyblue.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 380, 30));
+
+        getContentPane().add(bodyblue, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 730, 190));
+
+        bodyred.setBackground(new java.awt.Color(204, 0, 0));
+        bodyred.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        pickdettaym.setBackground(new java.awt.Color(204, 0, 0));
+        pickdettaym.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                pickdettaymMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                pickdettaymMouseExited(evt);
+            }
+        });
+        pickdettaym.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/internalpacks/icons8-sign-up-in-calendar-100.png"))); // NOI18N
+        pickdettaym.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 100, 90));
+
+        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(240, 240, 240));
+        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel8.setText("Pick Date and Time");
+        pickdettaym.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
+
+        bodyred.add(pickdettaym, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 50, 160, 130));
+
+        addresurv.setBackground(new java.awt.Color(204, 0, 0));
+        addresurv.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                addresurvMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                addresurvMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                addresurvMouseExited(evt);
+            }
+        });
+        addresurv.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/internalpacks/icons8-restaurant-table-100.png"))); // NOI18N
+        addresurv.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 110, 90));
+
+        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(240, 240, 240));
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel7.setText("Add Reservation");
+        addresurv.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, -1));
+
+        bodyred.add(addresurv, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, 170, 130));
+
+        picktabset.setBackground(new java.awt.Color(204, 0, 0));
+        picktabset.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                picktabsetMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                picktabsetMouseExited(evt);
+            }
+        });
+        picktabset.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/internalpacks/icons8-table-top-view-100.png"))); // NOI18N
+        picktabset.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 100, 90));
+
+        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(240, 240, 240));
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel6.setText("Pick Table and Seats");
+        picktabset.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, 20));
+
+        bodyred.add(picktabset, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 50, 160, 130));
+
+        getContentPane().add(bodyred, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 170, 730, 210));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void addresurvMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_addresurvMouseClicked
+        
+    }//GEN-LAST:event_addresurvMouseClicked
+
+    private void addresurvMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_addresurvMouseEntered
+        addresurv.setBackground(bodycd);
+    }//GEN-LAST:event_addresurvMouseEntered
+
+    private void addresurvMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_addresurvMouseExited
+        addresurv.setBackground(navcd);
+    }//GEN-LAST:event_addresurvMouseExited
+
+    private void pickdettaymMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pickdettaymMouseEntered
+        pickdettaym.setBackground(bodycd);
+    }//GEN-LAST:event_pickdettaymMouseEntered
+
+    private void pickdettaymMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pickdettaymMouseExited
+        pickdettaym.setBackground(navcd);
+    }//GEN-LAST:event_pickdettaymMouseExited
+
+    private void picktabsetMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_picktabsetMouseEntered
+        picktabset.setBackground(bodycd);
+    }//GEN-LAST:event_picktabsetMouseEntered
+
+    private void picktabsetMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_picktabsetMouseExited
+        picktabset.setBackground(navcd);
+    }//GEN-LAST:event_picktabsetMouseExited
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel addresurv;
+    private javax.swing.JPanel bodyblue;
+    private javax.swing.JPanel bodyred;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel pickdettaym;
+    private javax.swing.JPanel picktabset;
     // End of variables declaration//GEN-END:variables
 }
